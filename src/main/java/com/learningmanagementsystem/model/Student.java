@@ -24,12 +24,13 @@ public class Student {
 
     private String email;
 
-    @OneToMany(mappedBy = "students")
+    @OneToMany(mappedBy = "student")
     private Set<Course> courses;
 
     @ManyToOne
     @JoinColumn(name = "department_id")
     private Department department;
+
 
 //    @ManyToOne
 //    @JoinColumn(name = "course_course_id")

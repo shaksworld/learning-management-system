@@ -1,5 +1,6 @@
 package com.learningmanagementsystem.services;
 
+import com.learningmanagementsystem.dto.CourseDto;
 import com.learningmanagementsystem.dto.TeacherDto;
 import com.learningmanagementsystem.model.Teacher;
 import com.learningmanagementsystem.repository.TeacherRepository;
@@ -14,7 +15,7 @@ public interface TeacherService {
 
         void deleteTeacher(Long id);
 
-        Teacher updateTeacher(Long id, TeacherDto teacherDto);
+        Teacher getCourseOfTeacher(CourseDto courseDto, Long id);
 
 
 }
